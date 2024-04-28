@@ -1,0 +1,16 @@
+<!-- qr_generator.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generator</title>
+</head>
+<body>
+    <h1>QR Generator</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="qr_data">Enter Data:</label>
+        <input type="text" id="qr_data" name="qr_data">
+        <button type="submit">Generate QR Code</button>
+    </form>
